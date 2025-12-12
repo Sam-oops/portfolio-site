@@ -1,16 +1,40 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
     list-style: none;
     text-decoration: none;
-    font-weight: 400;
+}
+
+:root {
+    --font-family: "Oswald", sans-serif;
 }
 
 button,
 input {
-    background: transparent;
     border: none;
-    outline: none;
+    background: transparent;
     cursor: pointer;
+    outline: none;
+}
+
+.title {
+    font-size: 50px;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.btn {
+    width: 214px;
+    height: 58px;
+    padding: 29px 67px;
+
+    font-size: 20px;
+    line-height: 115%;
+    color: #000;
+    border-radius: 11px;
+    font-family: var(--font-family);
+    font-weight: 400;
 }

@@ -1,0 +1,14 @@
+$open: (
+    'Bold': 700,
+    'Light': 300,
+    'Regular': 400
+);
+
+@each $name, $weight in $open {
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: $weight;
+        src: url('@/assets/fonts/Oswald-#{$name}.ttf');
+    }
+}
