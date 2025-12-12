@@ -26,15 +26,29 @@ input {
     font-weight: 400;
 }
 
+.container {
+    max-width: 1123px;
+    padding: 0 15px;
+}
+
 .btn {
+    border-radius: 11px;
+    padding: 17px 58px 18px 60px;
     width: 214px;
     height: 58px;
-    padding: 29px 67px;
-
-    font-size: 20px;
-    line-height: 115%;
-    color: #000;
-    border-radius: 11px;
     font-family: var(--font-family);
     font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+
+    &.light {
+        background: #eae112;
+        color: #000;
+    }
+
+    &.dark {
+        background: transparent;
+        color: #eae112;
+        border: 1px solid #eae112;
+    }
 }

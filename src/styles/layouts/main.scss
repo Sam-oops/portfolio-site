@@ -1,17 +1,2 @@
 @use '../base/base.scss';
 @use '../base/fonts.scss';
-
-.wrapper {
-    display: flex;
-    overflow: hidden;
-
-    &__left {
-        width: 402px;
-        height: 100%;
-        background: #0e0e0e;
-    }
-
-    &__right {
-        width: 100%;
-    }
-}
