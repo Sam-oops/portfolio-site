@@ -4,18 +4,23 @@ import styles from "./Navbar.module.scss";
 import clsx from "clsx";
 import { github, linkedin, telegram } from "../utils/reExportImg";
 
+interface INavbar {
+  text: string;
+  link: string;
+}
+
 export default function Navbar() {
-  const navLink = [
-    { text: "Home", link: "/" },
-    { text: "Contacts", link: "/contacts" },
-    { text: "About", link: "/about" },
-    { text: "Projects", link: "/projects" },
+  const navLink: INavbar[] = [
+    { text: "Главная", link: "/" },
+    { text: "Контакты", link: "/contacts" },
+    { text: "Проекты", link: "/projects" },
+    { text: "О себе", link: "/about" },
   ];
 
   return (
     <>
       <div className={styles.nav}>
-        <div className={styles.nav__title}>лого</div>
+        <div className={styles.nav__title}>Думаю...</div>
         <ul className={styles.nav__list}>
           {navLink.map((el) => (
             <NavLink
@@ -29,13 +34,21 @@ export default function Navbar() {
           ))}
         </ul>
         <div className={styles.nav__soc_block}>
-          <a className={styles.nav__soc_block_link} href="">
+          <a className={styles.nav__soc_block_link} href="/" target="_blank">
             <img src={linkedin} alt="" />
           </a>
-          <a className={styles.nav__soc_block_link} href="/">
+          <a
+            className={styles.nav__soc_block_link}
+            href="https://github.com/Sam-oops"
+            target="_blank"
+          >
             <img src={github} alt="" />
           </a>
-          <a className={styles.nav__soc_block_link} href="#">
+          <a
+            className={styles.nav__soc_block_link}
+            href="https://t.me/sam_oops"
+            target="_blank"
+          >
             <img src={telegram} alt="" />
           </a>
         </div>
