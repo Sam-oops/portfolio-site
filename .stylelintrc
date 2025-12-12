@@ -1,0 +1,25 @@
+{
+  "plugins": ["stylelint-order", "stylelint-scss"],
+  "rules": {
+    "order/properties-order": [
+      [
+        {
+          "groupName": "Positioning",
+          "emptyLineBefore": "always",
+          "properties": ["position","top","right","bottom","left","z-index"]
+        },
+        {
+          "groupName": "Box Model",
+          "emptyLineBefore": "always",
+          "properties": ["display","flex","flex-direction","width","height","margin","padding","border"]
+        },
+        {
+          "groupName": "Typography",
+          "emptyLineBefore": "always",
+          "properties": ["font","font-size","line-height","color","text-align"]
+        }
+      ],
+      { "unspecified": "bottomAlphabetical" }
+    ]
+  }
+}
