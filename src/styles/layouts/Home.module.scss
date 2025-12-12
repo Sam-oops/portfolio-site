@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+}
+
+.home__block {
+    width: 100%;
+    background: #141313;
+    opacity: 0.9;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_img {
+        position: absolute;
+        opacity: .1;
+        width: 650px;
+        height: auto;
+        top: 40px;
+        right: 60px;
+        z-index: -1;
+    }
+
+    &_text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        h1 {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 70px;
+            color: #fff;
+        }
+
+        span {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 32px;
+            color: #fff;
+        }
+    }
+}
