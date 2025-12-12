@@ -1,3 +1,14 @@
 export { default as github } from "../assets/images/github.svg";
 export { default as linkedin } from "../assets/images/linkedin.svg";
 export { default as telegram } from "../assets/images/telegram.svg";
+export { default as bg_img } from "../assets/images/bg_img.png";
+export { default as html } from "../assets/images/html.svg";
+export { default as css } from "../assets/images/css.svg";
+export { default as js } from "../assets/images/js.svg";
+export { default as tailwind } from "../assets/images/tailwind.svg";
+export { default as redux } from "../assets/images/redux.svg";
+export { default as git } from "../assets/images/git.svg";
+export { default as react } from "../assets/images/react.svg";
+export { default as next } from "../assets/images/next.svg";
+export { default as project_img_todo } from "../assets/images/project_img_todo.png";
+export { default as project_img_portfolio } from "../assets/images/project_img_portfolio.png";
