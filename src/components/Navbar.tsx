@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import linkedin from "../assets/images/linkedin.svg";
-import github from "../assets/images/github.svg";
-import telegram from "../assets/images/telegram.svg";
 import styles from "./Navbar.module.scss";
 import clsx from "clsx";
+import { github, linkedin, telegram } from "../utils/reExportImg";
 
 export default function Navbar() {
   const navLink = [
