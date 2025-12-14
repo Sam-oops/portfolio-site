@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React from "react";
-import styles from "./ui.module.scss";
 
 interface ButtonProps {
   text: string;

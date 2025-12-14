@@ -1,9 +1,10 @@
 .wrapper {
     display: flex;
+    min-height: 100vh;
 }
 
 .about {
-    background: #141313;
+    background: var(--bg-color);
     opacity: 0.9;
     padding-top: 80px;
     width: 100%;
@@ -13,7 +14,7 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 50px;
-    color: #fff;
+    color: var(--text-color);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -23,7 +24,7 @@
     font-weight: 400;
     font-size: 24px;
     text-align: center;
-    color: #fff;
+    color: var(--text-color);
     max-width: 803px;
     margin: 0 auto;
     margin-bottom: 33px;
@@ -52,7 +53,7 @@
             font-family: var(--font-family);
             font-weight: 400;
             font-size: 36px;
-            color: #eae112;
+            color: var(--actvie-link);
             margin-bottom: 20px;
         }
 
@@ -60,7 +61,7 @@
             font-family: var(--font-family);
             font-weight: 400;
             font-size: 26px;
-            color: #fff;
+            color: var(--text-color);
             margin-bottom: 23px;
         }
 
@@ -69,7 +70,7 @@
             font-weight: 400;
             font-size: 22px;
             line-height: 127%;
-            color: #fff;
+            color: var(--text-color);
             margin-bottom: 20px
         }
 

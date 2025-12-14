@@ -9,6 +9,17 @@
 
 :root {
     --font-family: "Oswald", sans-serif;
+    --bg-color: #141313;
+    --text-color: #fff;
+    --navbar-bg-color: #0e0e0e;
+    --actvie-link: #eae112;
+}
+
+body[data-theme="light"] {
+    --bg-color: #fff;
+    --text-color: #141313;
+    --navbar-bg-color: rgb(217, 217, 217);
+    --actvie-link: #ea1212;
 }
 
 button,
@@ -21,7 +32,7 @@ input {
 
 .title {
     font-size: 50px;
-    color: #fff;
+    color: var(--text-color);
     font-family: var(--font-family);
     font-weight: 400;
 }
@@ -42,13 +53,13 @@ input {
     line-height: 115%;
 
     &.light {
-        background: #eae112;
+        background: var(--actvie-link);
         color: #000;
     }
 
     &.dark {
         background: transparent;
-        color: #eae112;
-        border: 1px solid #eae112;
+        color: var(--actvie-link);
+        border: 1px solid var(--actvie-link);
     }
 }

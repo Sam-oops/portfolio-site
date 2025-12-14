@@ -9,14 +9,14 @@ interface IBlocks {
   id: number;
   img: string;
   desc: string;
-  link?: { url: string; target: "_blank" | "_self" };
+  link: { url: string; target: "_blank" | "_self" };
 }
 
 const blocks: IBlocks[] = [
   {
     id: 1,
     img: project_img_todo,
-    desc: "Pet-проект - To do list на React js с использованием use context, i18n, функциями смены языка и переводами",
+    desc: "Pet-проект - To do list на React js с использованием React Context, i18n, функциями смены языка и переводами",
     link: {
       url: "https://github.com/Sam-oops/To-do-list-on-React",
       target: "_blank",
@@ -25,7 +25,7 @@ const blocks: IBlocks[] = [
   {
     id: 2,
     img: project_img_portfolio,
-    desc: "Это простой по дизайну сайт-портфолио, с использованием React-router, UI компонентами, Redux toolkit и React hook form",
+    desc: "Это простой по дизайну сайт-портфолио, с использованием React-router, UI компонентами, React Context и React hook form",
     link: {
       url: "https://github.com/Sam-oops/portfolio-site",
       target: "_blank",
@@ -35,6 +35,7 @@ const blocks: IBlocks[] = [
     id: 3,
     img: "",
     desc: "Скоро...",
+    link: { target: "_self", url: "/projects" },
   },
 ];
 
