@@ -1,5 +1,5 @@
 .nav {
-    background: #0e0e0e;
+    background: var(--navbar-bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,14 +7,6 @@
     padding: 40px 0;
     max-width: 402px;
     width: 30%;
-
-    &__title {
-        font-size: 55px;
-        color: #eae112;
-        font-family: var(--font-family);
-        font-weight: 400;
-        margin-bottom: 140px;
-    }
 
     &__list {
         display: flex;
@@ -30,12 +22,12 @@
 
             text-transform: uppercase;
             font-size: 20px;
-            color: #fff;
+            color: var(--text-color);
             font-family: var(--font-family);
             font-weight: 700;
 
             &.active {
-                color: #eae112;
+                color: var(--actvie-link);
             }
         }
 
@@ -51,5 +43,27 @@
             height: 35px;
             width: 35px;
         }
+    }
+}
+
+.btn_toggleTheme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 30px;
+
+    &.dark {
+        background: #141313;
+        color: #eae112;
+    }
+
+    &.light {
+        background: #eae112;
+        color: #000;
     }
 }
