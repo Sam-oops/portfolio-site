@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.contacts {
+    background: var(--bg-color);
+    opacity: 0.9;
+    padding-top: 80px;
+    width: 100%;
+}
+
+.contacts__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 50px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contacts__desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: var(--text-color);
+    max-width: 803px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+}
