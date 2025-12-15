@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Context, Theme } from "./context";
+import { Context } from "./context";
 
 interface ProviderContextType {
   children: React.ReactNode;
+}
+
+export type Theme = "dark" | "light";
+
+interface IThemeContext {
+  theme: Theme;
+  toggleTheme: () => void;
 }
 
 export default function ThemeContextProvider({
