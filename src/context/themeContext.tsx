@@ -5,17 +5,10 @@ interface ProviderContextType {
   children: React.ReactNode;
 }
 
-export type Theme = "dark" | "light";
-
-interface IThemeContext {
-  theme: Theme;
-  toggleTheme: () => void;
-}
-
 export default function ThemeContextProvider({
   children,
 }: ProviderContextType) {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);

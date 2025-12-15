@@ -3,11 +3,11 @@ import { createContext } from "react";
 export type Theme = "dark" | "light";
 
 interface ThemeProps {
-  theme: Theme;
-  setTheme: () => void;
+  theme?: string;
+  toggleTheme: () => void;
 }
 
 export const Context = createContext<ThemeProps>({
   theme: "dark",
-  setTheme: () => {},
+  toggleTheme: () => {},
 });
